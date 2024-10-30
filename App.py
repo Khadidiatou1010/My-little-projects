@@ -11,7 +11,7 @@ import random
 
 
 # Titre de l'application
-st.title("Chasse au Trésor")
+st.title("ENSAE-ESMT Ultimate Treasure Hunt")
 
 # Sélection de l'épreuve
 step = st.selectbox("Sélectionnez l'épreuve :", ["Steve Jobs", "Colonel Sanders", "David Goggins", "Taj Mahal", "Giving Directions", "I, Robot"])
