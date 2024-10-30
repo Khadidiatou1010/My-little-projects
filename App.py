@@ -5,27 +5,8 @@ Created on Wed Oct 30 10:35:50 2024
 @author: DELL
 """
 
-import os
-directory= "C:/Users/DELL/Desktop/ENSAE/ENGLISH CLUB/ENGLISH CLUB 2023_2024/Big treasure Hunt"
-os.chdir(directory)
 import streamlit as st
 import random
-
-
-
-
-# CSS pour ajouter une image de fond
-page_bg_img = '''
-<style>
-.stApp {
-    background-image: url("THUNT_Affiche.jpg");
-    background-size: cover;
-}
-</style>
-'''
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
 
 
 
