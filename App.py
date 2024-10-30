@@ -22,11 +22,76 @@ if step == "Giving Directions":
     # Layout pour les 4 questions dans Step3, 2 lignes et 2 colonnes
     col1, col2 = st.columns(2)
     with col1:
-        response1 = st.selectbox("Question 1 :", ["A", "B", "C", "D"])
-        response3 = st.selectbox("Question 3 :", ["A", "B", "C", "D"])
+        response1 = st.selectbox("Speaker A :",[
+    "hospital",
+    "police station",
+    "supermarket",
+    "book shop",
+    "bus station",
+    "cinema",
+    "theatre",
+    "underground station",
+    "café",
+    "Italian restaurant",
+    "shop",
+    "post office",
+    "library",
+    "museum",
+    "factory"
+]
+)
+        response3 = st.selectbox("Speaker C :",[
+    "hospital",
+    "police station",
+    "supermarket",
+    "book shop",
+    "bus station",
+    "cinema",
+    "theatre",
+    "underground station",
+    "café",
+    "Italian restaurant",
+    "shop",
+    "post office",
+    "library",
+    "museum",
+    "factory"
+])
     with col2:
-        response2 = st.selectbox("Question 2 :", ["A", "B", "C", "D"])
-        response4 = st.selectbox("Question 4 :", ["A", "B", "C", "D"])
+        response2 = st.selectbox("Speaker B :", [
+    "hospital",
+    "police station",
+    "supermarket",
+    "book shop",
+    "bus station",
+    "cinema",
+    "theatre",
+    "underground station",
+    "café",
+    "Italian restaurant",
+    "shop",
+    "post office",
+    "library",
+    "museum",
+    "factory"
+])
+        response4 = st.selectbox("Speaker D :", [
+    "hospital",
+    "police station",
+    "supermarket",
+    "book shop",
+    "bus station",
+    "cinema",
+    "theatre",
+    "underground station",
+    "café",
+    "Italian restaurant",
+    "shop",
+    "post office",
+    "library",
+    "museum",
+    "factory"
+])
 else:
     # Pour les autres épreuves, seulement 2 questions sont affichées
     response1 = st.selectbox("Choisissez la réponse de la question 1 :", ["A", "B", "C", "D"])
@@ -36,7 +101,7 @@ else:
 if st.button("Confirmer"):
     if step == "Giving Directions":
         # Exemple de logique pour le Step3 avec les 4 questions
-        if response1 == "A" and response2 == "B" and response3 == "C" and response4 == "D":
+        if response1 == "post office" and response2 ==  "underground station" and response3 == "cinema" and response4 == "bus station":
             st.success("Lieu : Outside 1")
         else:
             random_place = random.choice(["FL1", "FL2", "FL3"])
