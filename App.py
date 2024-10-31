@@ -102,54 +102,66 @@ if st.button("Confirmer"):
     if step == "Giving Directions":
         # Exemple de logique pour le Step3 avec les 4 questions
         if response1 == "post office" and response2 ==  "underground station" and response3 == "cinema" and response4 == "bus station":
-            st.success("Lieu : Outside 1")
+            st.success("The next QR code at the *Laboratory Gate*. Scan it there and come in the center room to give the answer.")
         else:
-            random_place = random.choice(["FL1", "FL2", "FL3"])
-            st.success(f"Lieu : {random_place}")
+            random_place = random.choice(["The next QR code at the Gate of *room HB1*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room HB7*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room E22-23*. Scan it there and come in the center room to give the answer."])
+            st.success(f"{random_place}")
 
 
     if step == "Steve Jobs":
         # Exemple de logique pour le Step3 avec les 4 questions
         if response1 == "B" and response2 == "B":
-            st.success("Lieu : Laser maze")
+            st.success("The next QR code is *in the room HA4*. Scan it and give the answer to the person there.")
         else:
-            random_place = random.choice(["FL1", "FL2", "FL3"])
-            st.success(f"Lieu : {random_place}")
+            random_place = random.choice(["The next QR code at the Gate of *room HB1*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room HB7*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room E22-23*. Scan it there and come in the center room to give the answer."])
+            st.success(f"{random_place}")
 
 
     if step == "Colonel Sanders":
         # Exemple de logique pour le Step3 avec les 4 questions
         if response1 == "B" and response2 == "C":
-            st.success("Lieu : Outside 2")
+            st.success("The next QR code *at the Cafeteria Gate*. Scan it there and come in the center room to give the answer.")
         else:
-            random_place = random.choice(["FL1", "FL2", "FL3"])
-            st.success(f"Lieu : {random_place}")
+            random_place = random.choice(["The next QR code at the Gate of *room HB1*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room HB7*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room E22-23*. Scan it there and come in the center room to give the answer."])
+            st.success(f"{random_place}")
 
 
     if step == "David Goggins":
         # Exemple de logique pour le Step3 avec les 4 questions
         if response1 == "C" and response2 == "D":
-            st.success("Lieu : The floor is lava")
+            st.success("The next QR code is *in the room HA5*. Scan it and give the answer to the person there.")
         else:
-            random_place = random.choice(["FL1", "FL2", "FL3"])
-            st.success(f"Lieu : {random_place}")
+            random_place = random.choice(["The next QR code at the Gate of *room HB1*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room HB7*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room E22-23*. Scan it there and come in the center room to give the answer."])
+            st.success(f"{random_place}")
  
 
     if step == "Taj Mahal":
         # Exemple de logique pour le Step3 avec les 4 questions
         if response1 == "C" and response2 == "B":
-            st.success("Lieu : Twister")
+            st.success("The next QR code is *in the room HA3*. Scan it and give the answer to the person there.")
         else:
-            random_place = random.choice(["FL1", "FL2", "FL3"])
-            st.success(f"Lieu : {random_place}")
+            random_place = random.choice(["The next QR code at the Gate of *room HB1*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room HB7*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room E22-23*. Scan it there and come in the center room to give the answer."])
+            st.success(f"{random_place}")
 
     if step == "I, Robot":
         # Exemple de logique pour le Step3 avec les 4 questions
         if response1 == "C" and response2 == "C":
-            st.success("Lieu : Outside 3")
+            st.success("The QR code is *on a bench in the school yard*. Scan it there and come in the Center Room to give the answer.")
         else:
-            random_place = random.choice(["FL1", "FL2", "FL3"])
-            st.success(f"Lieu : {random_place}")
+            random_place = random.choice(["The next QR code at the Gate of *room HB1*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room HB7*. Scan it there and come in the center room to give the answer.",
+                                          "The next QR code at the Gate of *room E22-23*. Scan it there and come in the center room to give the answer."])
+            st.success(f"{random_place}")
  
  
             
